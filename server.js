@@ -59,7 +59,7 @@ app.use('/teacher', teacherRoute)
 app.use('/timekeeping', timeKeepingRoute)
 app.use('/advisory', advisoryRoute)
 app.use('/auditTrail',auditTrailRoute) 
-app.use('/quater',quarter) 
+app.use('/quarter',quarter) 
 
 
 // PORT
