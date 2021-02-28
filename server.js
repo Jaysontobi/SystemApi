@@ -21,7 +21,8 @@ const gradesRoute = require('./routes/grades.route')
 const teacherRoute = require('./routes/teacher.route')
 const advisoryRoute = require('./routes/advisory.route')
 const timeKeepingRoute = require('./routes/timeKeepingRoute')
-const auditTrailRoute = require('./routes/auditTrail.route')
+const auditTrailRoute = require('./routes/auditTrail.route') 
+const quarter = require('./routes/quarter.route') 
 
 // Connecting mongoDB Database
 mongoose.Promise = global.Promise;
@@ -57,7 +58,8 @@ app.use('/grades', gradesRoute)
 app.use('/teacher', teacherRoute)
 app.use('/timekeeping', timeKeepingRoute)
 app.use('/advisory', advisoryRoute)
-app.use('/auditTrail',auditTrailRoute)
+app.use('/auditTrail',auditTrailRoute) 
+app.use('/quater',quarter) 
 
 
 // PORT
